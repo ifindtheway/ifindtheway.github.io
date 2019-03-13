@@ -13,7 +13,7 @@
 header{
 	display:flex;
 	background-image:url(assets/header.jpg);
-	background-color: rgba(0, 0, 0, 0.096);
+	background-color: rgba(0, 0, 0, 0.274);
 	background-blend-mode: overlay;
 	min-height:100vh;
 	min-width:100vw;
@@ -125,7 +125,7 @@ footer{
 	background-color: var(--secondary-color);
 	width:90vw;
 	border-radius: 20px 20px 0 0;
-	padding:0.8rem;
+	padding:1rem;
 	margin:0 auto;
 }
 
@@ -147,3 +147,9 @@ footer{
 .love{
 	font-size:0.7rem;
 }
+
+/***********************
+TODO:
+	Add responsive website for screens under 750px
+	Test on devices
+************************/
