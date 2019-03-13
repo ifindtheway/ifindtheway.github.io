@@ -7,6 +7,7 @@
 	--accent-color: rgb(5, 180, 136);
 	--accent-color2: rgb(255, 213, 0);
 	overflow-x: hidden;
+	font-family: 'PT Sans', sans-serif;
 }
 
 header{
@@ -24,11 +25,13 @@ header{
 .hQuote{
 	font-family: 'PT Sans', sans-serif;
 	align-self: center;
+	overflow: visible;
 }
 
 .hQuote h2{
 	font-size:4rem;
 	text-shadow: 1px 1px 20px var(--accent-color);
+	overflow: visible;
 }
 
 .hNavbar{
@@ -105,4 +108,42 @@ header{
 .window{
 	width:100vw;
 	height:20vh;
+}
+
+footer{
+	position: absolute;
+	display:flex;
+	z-index:4;
+	width:100vw;
+
+}
+
+.fWrapper{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--secondary-color);
+	width:90vw;
+	border-radius: 20px 20px 0 0;
+	padding:0.8rem;
+	margin:0 auto;
+}
+
+.fWrapper a:link, .fWrapper a:visited, .fWrapper a:hover, .fWrapper a:active{
+	color:var(--primary-color);
+}
+
+.fIcon{
+	color:var(--primary-color);
+	font-size:2rem;
+	margin:0 0.3rem;
+}
+
+.fSocialMediaIcons{
+	display:flex;
+	align-items: center;
+}
+
+.love{
+	font-size:0.7rem;
 }

@@ -1,5 +1,9 @@
 document.addEventListener("load", function(){
 	window.scroll(0,100);
+	document.getElementsByClassName('hNavElem')[0].addEventListener("focus", function() {
+		window.scrollTo(x-coord, y-coord);
+		document.getElementsByClassName('hContainer')[0].style.top = "0";
+	})
 })
 var scrollFirstTime = true;
 var prevScrollpos = window.pageYOffset;
@@ -20,6 +24,4 @@ var height = document.getElementsByClassName('hContainer')[0].offsetHeight;
 	document.getElementsByClassName('hContainer')[0].style.top = "-"+height+"px";
   }
   prevScrollpos = currentScrollPos;
-
-  console.log(window.pageYOffset)
 }
