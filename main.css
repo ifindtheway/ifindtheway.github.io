@@ -1,0 +1,108 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	--primary-color: rgb(27, 26, 26); 
+	--secondary-color: rgb(255, 255, 255); 
+	--accent-color: rgb(5, 180, 136);
+	--accent-color2: rgb(255, 213, 0);
+	overflow-x: hidden;
+}
+
+header{
+	display:flex;
+	background-image:url(assets/header.jpg);
+	background-color: rgba(0, 0, 0, 0.096);
+	background-blend-mode: overlay;
+	min-height:100vh;
+	min-width:100vw;
+	position:fixed;
+	justify-content: center;
+	z-index:1;
+}
+
+.hQuote{
+	font-family: 'PT Sans', sans-serif;
+	align-self: center;
+}
+
+.hQuote h2{
+	font-size:4rem;
+	text-shadow: 1px 1px 20px var(--accent-color);
+}
+
+.hNavbar{
+	
+}
+
+.hLogo{
+	color:var(--accent-color2);
+	text-shadow: 1px 1px 10px var(--secondary-color);
+	font-family: 'Pacifico', cursive;
+	font-size: 3rem;
+	overflow:visible;
+}
+
+.icon{
+	color:var(--accent-color2);
+}
+
+.hNavElem a:link, .hNavElem a:visited, .hNavElem a:hover, .hNavElem a:active{
+	font-family: 'Overpass', sans-serif;
+	color: var(--accent-color2);
+	font-size:1.2rem;
+}
+
+.hNavElem{
+	font-weight:bold;
+	display:inline-block;
+}
+
+.hNavElem a{
+	text-decoration:none;
+}
+
+.hContainer{
+	padding:0.5rem 0;
+	position:absolute;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	left:0;
+	width:100vw;
+	border-radius: 20px;
+	transition:all 0.2s;
+}
+
+.wrapper{
+	position:relative;
+	z-index:2;
+	pointer-events: none;
+}
+
+.filler{
+	min-height:100vh;
+	min-width:100vw;
+}
+
+.content{
+	background-color:white;
+	pointer-events: auto;
+	padding:1rem;
+	border-radius:30px;
+	width:90vw;
+	margin:0 auto;
+
+	/* Card Effect */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+	transition: 0.3s;
+}
+
+.content:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.window{
+	width:100vw;
+	height:20vh;
+}
