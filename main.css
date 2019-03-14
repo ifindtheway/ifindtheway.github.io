@@ -84,6 +84,7 @@ header{
 	justify-content: space-around;
 	align-items:center;
 	left:0;
+	top:0;
 	width:100vw;
 	border-radius: 20px;
 	transition:all 0.2s;
