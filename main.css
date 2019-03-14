@@ -87,7 +87,7 @@ header{
 	top:0;
 	width:100vw;
 	border-radius: 20px;
-	transition:all 0.2s;
+	transition:all 0.5s;
 }
 
 .wrapper{
