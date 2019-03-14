@@ -13,7 +13,7 @@ window.onscroll = function() {
 		scrollFirstTime = false;
 		return;
 	}
-	if(window.pageYOffset < 750 || window.pageYOffset > 1000){
+	if((window.pageYOffset < 650 || window.pageYOffset > 1000) && window.pageYOffset != 0){
 		return;
 	}
 var currentScrollPos = window.pageYOffset;
