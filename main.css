@@ -34,15 +34,15 @@ header{
 	overflow: visible;
 }
 
-.hNavbar{
-	
-}
-
-.hLogo{
+.hLogo a{
 	color:var(--accent-color2);
 	text-shadow: 1px 1px 10px var(--secondary-color);
 	font-family: 'Pacifico', cursive;
 	font-size: 3rem;
+	text-decoration: none;
+}
+
+.hLogo{
 	overflow:visible;
 }
 
@@ -50,10 +50,22 @@ header{
 	color:var(--accent-color2);
 }
 
-.hNavElem a:link, .hNavElem a:visited, .hNavElem a:hover, .hNavElem a:active{
+.hNavElem a{
 	font-family: 'Overpass', sans-serif;
 	color: var(--accent-color2);
 	font-size:1.2rem;
+	transition:all 0.2s;
+}
+
+.hActive a{
+	color:var(--accent-color);
+	font-size:1.3rem;
+
+}
+
+.hNavElem a:hover{
+	color:var(--accent-color);
+	font-size:1.3rem;
 }
 
 .hNavElem{
