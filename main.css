@@ -34,6 +34,22 @@ header{
 	overflow: visible;
 }
 
+.hContainer{
+	padding:0.5rem 0;
+	position:absolute;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	left:0;
+	top:0;
+	width:100vw;
+	border-radius: 20px;
+	transition:all 0.5s;
+	overflow: visible;
+
+	
+}
+
 .hLogo a{
 	color:var(--accent-color2);
 	text-shadow: 1px 1px 10px var(--secondary-color);
@@ -50,44 +66,55 @@ header{
 	color:var(--accent-color2);
 }
 
+.hNavbar{
+	overflow: visible;
+}
+
+.hNavbar ul{
+	overflow: visible;
+}
+
 .hNavElem a{
 	font-family: 'Overpass', sans-serif;
 	color: var(--accent-color2);
 	font-size:1.2rem;
 	transition:all 0.2s;
-}
-
-.hActive a{
-	color:var(--accent-color);
-	font-size:1.3rem;
-
-}
-
-.hNavElem a:hover{
-	color:var(--accent-color);
-	font-size:1.3rem;
+	text-shadow: 1px 1px 10px rgb(255,255,255,0.5);
+	overflow: visible;
 }
 
 .hNavElem{
 	font-weight:bold;
 	display:inline-block;
+	overflow: visible;
+	padding:0.4rem;
+}
+
+.hNavElem:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	transition:all 0.2s;
 }
 
 .hNavElem a{
 	text-decoration:none;
 }
 
-.hContainer{
-	padding:0.5rem 0;
-	position:absolute;
-	display:flex;
-	justify-content: space-around;
-	align-items:center;
-	left:0;
-	top:0;
-	width:100vw;
-	border-radius: 20px;
-	transition:all 0.5s;
+.hNavElem:hover a{
+	color:var(--accent-color);
+}
+
+
+.hActive a{
+	color:var(--accent-color);
+	overflow: visible;
+}
+
+.hActive{
+	transform: scale(1.2);
+	overflow: visible;
 }
 
 .wrapper{
@@ -150,6 +177,11 @@ footer{
 	color:var(--primary-color);
 	font-size:2rem;
 	margin:0 0.3rem;
+	transition: color 0.3s
+}
+
+.fIcon:hover{
+	color:var(--accent-color);
 }
 
 .fSocialMediaIcons{
@@ -163,6 +195,14 @@ footer{
 
 /***********************
 TODO:
-	Add responsive website for screens under 750px
-	Test on devices
+	Add responsive website for screens under 768px
+		Test on devices
+
+	Add real text
+
+	Add arrow to bottom side of the header to show the user he has to scroll
+		Animate it
+
+	**DONE** Fix nav floating around on hover
+
 ************************/
