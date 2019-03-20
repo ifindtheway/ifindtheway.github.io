@@ -16,7 +16,7 @@ header{
 	background-color: rgba(0, 0, 0, 0.274);
 	background-blend-mode: overlay;
 	min-height:100vh;
-	min-width:100vw;
+	width:100vw;
 	position:fixed;
 	justify-content: center;
 	z-index:1;
@@ -46,8 +46,6 @@ header{
 	border-radius: 20px;
 	transition:all 0.5s;
 	overflow: visible;
-
-	
 }
 
 .hLogo a{
@@ -191,6 +189,39 @@ footer{
 
 .love{
 	font-size:0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+	
+	.hQuote{
+		text-align: center;
+
+	}
+	
+	.hQuote h2{
+		font-size:2rem;
+		overflow: visible;
+	}
+
+	.hContainer{
+		flex-direction:column;
+	}
+
+	.hLogo{
+		padding:1.2rem 0rem;
+	}
+
+	.hLogo a{
+		font-size:2.5rem;
+	}
+
+	.fWrapper{
+		flex-direction: column;
+	}
+
+	.fWrapper *{
+		padding:0.3rem 0;
+	}
 }
 
 /***********************
