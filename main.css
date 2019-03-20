@@ -30,7 +30,7 @@ header{
 
 .hQuote h2{
 	font-size:4rem;
-	text-shadow: 1px 1px 20px var(--accent-color);
+	text-shadow: 0px 0px 10px var(--secondary-color);
 	overflow: visible;
 }
 
@@ -226,13 +226,16 @@ footer{
 
 /***********************
 TODO:
-	Add responsive website for screens under 768px
-		Test on devices
-
 	Add real text
 
-	Add arrow to bottom side of the header to show the user he has to scroll
-		Animate it
+	Add better title
+
+	Add a title icon
+
+	**DONE**Add responsive website for screens under 768px
+		**Half done?** Test on devices
+		**BUG** When user scrolls too fast, navbar doesn't disappear. Especially true on mobile.
+
 
 	**DONE** Fix nav floating around on hover
 
