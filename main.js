@@ -1,7 +1,8 @@
 var scrollFirstTime = true;
-document.addEventListener("load", function(){
+window.addEventListener("load", function(){
 	window.scroll(0,100);
 })
+
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
